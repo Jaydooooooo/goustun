@@ -20,3 +20,7 @@ nohup gost -L tcp://:中转机入站端口 -F relay+wss://中转机IP:中转机�
 
 #中转鸡命令2
 nohup gost -L relay+wss://:中转机出站端口/落地机IP:落地机端口 &  #这里默认中转机的出站端口和落地机的出站端口一样
+
+#查看进程
+ps aux | grep gost
+
